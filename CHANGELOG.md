@@ -3,6 +3,20 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.2.1] — 2026-10-26
+
+### Browser button
+- **Fixed:** on a YouTube video page the button sometimes opened another video (one of the suggestions shown at the end of the video) instead of the one playing. It now always takes the video you are watching, and on the home, search and channel pages the video you are previewing.
+- A slimmer bar, like the classic IDM button.
+- It follows the page's language: on Arabic pages it reads "تحميل بـ LinkPilot" and sits on the video's left, away from the logo; on English pages it sits on the right.
+- It stays below a site's top bar (YouTube's logo and search) instead of covering it.
+- New **✕** next to it hides it on that page.
+
+### Notifications
+- The new-version notification now shows the version number and what is new, with **Update now** and **Later** buttons. Update now installs at once when the update is already downloaded.
+- New switch in Settings → Notifications: "Notify me when an update is available". When it is off, the update window waits for you inside LinkPilot.
+- LinkPilot no longer pops its window open by itself when it finds an update while it is in the tray.
+
 ## [0.2.0] — 2026-10-26
 
 ### Faster downloads
@@ -42,5 +56,6 @@ First public version.
 - Browser extension for Chromium browsers and Firefox.
 - Arabic and English interface, dark and light themes.
 
+[0.2.1]: https://github.com/AdhamHammam2023/LinkPilot/releases/tag/v0.2.1
 [0.2.0]: https://github.com/AdhamHammam2023/LinkPilot/releases/tag/v0.2.0
 [0.1.0]: https://github.com/AdhamHammam2023/LinkPilot/releases
