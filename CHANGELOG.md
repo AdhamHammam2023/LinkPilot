@@ -3,6 +3,20 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.2.3] — 2026-10-26
+
+### Playlists
+- New **Put them all in one ZIP file** in the playlist window. When every video has finished, they are packed (with their subtitles) into one ZIP named after the list, next to its folder. **Delete the separate files once the ZIP is ready** keeps only the ZIP. Closing LinkPilot halfway is fine: it finishes the ZIP the next time it runs.
+
+### Downloads
+- New **Select** on the Downloads and Completed pages: tick several downloads (or **Select all**) and **Delete selected** in one go, with the option to delete the files from disk too.
+- New **Delete all** on the Downloads page.
+
+### Updates
+- After an update LinkPilot now **opens again by itself** and shows **What's new** in the app's language (Arabic or English).
+- New choice in Settings → Notifications: **Show update alerts** inside LinkPilot, as a Windows notification, or both.
+- LinkPilot now checks for a new version every half hour instead of every two hours.
+
 ## [0.2.2] — 2026-10-26
 
 ### Playlists and channels
