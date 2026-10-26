@@ -136,6 +136,18 @@ Already have LinkPilot? You don't need to come back here. From version **0.2.0**
 
 *If you have version 0.1.0, install the latest release once by hand. Every update after that arrives automatically.*
 
+## Documentation
+
+| | |
+|---|---|
+| 📦 [Install guide](INSTALL.md) | Setup, video tools and the browser extension |
+| 📝 [Changelog](CHANGELOG.md) | What's new in every version |
+| ❓ [FAQ](FAQ.md) | Speed, SmartScreen, video sites, updates |
+| 🔒 [Privacy](PRIVACY.md) | What LinkPilot connects to, and what it never does |
+| 🛡️ [Security](SECURITY.md) | How updates are verified, and how to report a problem |
+| 🙋 [Support](SUPPORT.md) | Where to get help |
+| 📜 [Third-party notices](THIRD_PARTY_NOTICES.md) | The open-source components inside LinkPilot |
+
 ---
 
 <div align="center">
