@@ -150,7 +150,7 @@ The quality window lists every quality the site offers, **from 144p up to 8K**, 
 - **Chapters:** save each chapter as its own file, or download only some of them.
 - **Part of a video:** set *From* and *To* (for example 1:05 to 3:20) on a timeline under the video, and only that part is downloaded.
 - **Live streams** are recorded until they end or you stop them, from the beginning when the site allows it.
-- **Playlists and channels:** you get a list of their videos with check boxes. Choose one quality for all of them, tick the videos you want, and they download one after another.
+- **Playlists and channels:** you get a list of their videos with check boxes, even with thousands of videos, from YouTube or any other site. Choose one quality for all of them (video, or audio as M4A / MP3), tick the videos you want or pick a range by number, and they download one after another.
 - **Clean files:** titles lose extras like `(Official Video) [4K] #shorts`, SponsorBlock can cut sponsor segments from YouTube videos, and the title, details and cover picture are written into the file.
 - **TikTok:** every quality TikTok offers, without the watermark. There's also a copy *with* the watermark, and the original song used in the clip.
 

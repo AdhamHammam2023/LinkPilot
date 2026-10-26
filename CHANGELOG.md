@@ -3,6 +3,15 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.2.2] — 2026-10-26
+
+### Playlists and channels
+- **Fixed:** a playlist link kept loading for a long time. LinkPilot was looking up every video of the list one by one before showing anything. It now knows at once that the link is a list (about 3 seconds) and opens the list window.
+- Big lists are fully supported: up to 20,000 videos per playlist or channel (a channel with 5,300 videos is read in under two minutes). Works with YouTube and any other site yt-dlp can read as a list (SoundCloud, Vimeo, Dailymotion…).
+- One choice for the whole list: video (best, 4K, 1440p, 1080p, 720p, 480p, 360p) or audio only (M4A, or MP3 at 320 / 192 / 128 kbps). A video without the chosen quality downloads in the nearest lower one.
+- New **Select from number … to …**, to download part of a long list (for example the first 200 videos), and the total length of the selected videos.
+- A YouTube video link that belongs to a playlist (`watch?v=…&list=…`) now shows **Show the whole list** at the top of the video window.
+
 ## [0.2.1] — 2026-10-26
 
 ### Browser button
