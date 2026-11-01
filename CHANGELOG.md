@@ -3,6 +3,59 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.3.1] — 2026-11-02
+
+### Chat like WhatsApp Web
+- **Ticks**: one tick = sent, two = delivered, two green = read (read receipts can be turned off). Messages to someone offline wait and are **delivered automatically** when they open LinkPilot.
+- **Online / last seen / typing…** in the chat header, **profile pictures** shared with your contacts, unread counters, day separators and animations.
+- **Drag and drop** files onto the chat or **paste** pictures; a **preview tray** lets you add or remove files and write a caption before sending. Pictures and videos show inside the chat.
+- **Voice notes** with a waveform of the real sound and their length.
+- **Link cards** (picture, title, site) for YouTube and any site or server; clicking a link offers **Open in browser / Show qualities / Download now**.
+- **Delete for me** or **Delete for everyone**, emoji, copy, show in folder.
+- **Notifications with sound** for every new message (Settings → LinkPilot Send), and different sounds for sending and receiving.
+
+### Other new things
+- **Hear the sound while picking a part** of a video before downloading.
+- **French and Spanish** interface.
+- **Downloads and Completed on one page** (the separate Completed page is gone).
+
+### Fixes
+- Updating failed with “File not found on the server” (the 0.3.0 release had a different tag); the installer is now also fetched from the latest release, and LinkPilot checks for updates **every 10 minutes** — at once when a chat contact already has a newer version. Copies set to automatic updates that failed used to stay silent; they now show the update window.
+- “Open” in the chat showed “Invalid save location”; messages stayed on “sending”; closing the file prompt refused the file.
+- Server details and top speed of video downloads now show from the start (not only after pause/resume).
+- Audio bitrates sit next to the format in the quality window; the Downloads toolbar no longer sticks out of its card; the side menu's scrollbar no longer shows outside the menu in Arabic.
+
+## [0.3.0] — 2026-11-01
+
+### LinkPilot Send — send and chat with anyone, anywhere
+- New **Send & chat** page: connect with a friend using an **invite code** and a **6-digit safety number** you both compare, then send **files, videos, voice notes, links, magnets and .torrent files** and **chat** — even across cities and countries, one-to-one or in **groups of up to 10**.
+- End-to-end encrypted: devices connect directly and use a relay only when there is no direct path; a relay cannot read anything.
+- Safety settings: who can send to you, **ask every time or only the first time**, allowed kinds, size limit, blocking. Broken transfers continue where they stopped, every file's fingerprint is checked, programs are scanned with Defender.
+
+### Library and watching
+- New **Library** page: search, automatic categories (video, series, music, documents, programs…), your own labels, and **duplicates found by fingerprint**.
+- **Watch** shelf: continue watching, series grouped by season and episode, posters made from the videos, and a **built-in player** with subtitles, speed and picture-in-picture.
+- **Search inside subtitles** and jump to that moment. **Free up space**: big old files to the Recycle Bin, or **shrink videos to H.265 on the graphics card** while the computer is idle.
+
+### File hosts and servers
+- **MediaFire, Pixeldrain, 1fichier, Terabox and Google Drive folders**: the real file without waiting pages; folder links list every file. **Metalink** (.meta4) downloads from all mirrors with a hash check.
+- Every download shows **the server it comes from** (Cloudflare, Google, Akamai, MediaFire…), its city when known, IP address and **top speed**.
+
+### Smarter downloads
+- Pauses when the **internet drops** and continues by itself; **metered network** (phone hotspot) limit or pause; **battery** pause; continues on another drive when one is full.
+- **YouTube throttling watchdog**: a slowed-down video gets a fresh link and continues. Speeds can be shown in **Mbit/s** like internet plans.
+- **Connection check** page (why is it slow?), **DNS over HTTPS**, log export.
+- **After-download rules** (move, label, convert, compress, extract, open), **watch folder**, **webhook**.
+- **Subscriptions** show what is new by name, with **Download / Skip** when automatic download is off; **live streams are recorded as soon as they start**; torrent RSS, IP blocklist, seeding ratio and hours.
+- **Search** keeps loading results as you scroll — no limit.
+
+### Everyday use
+- **Ctrl+K** command palette, custom shortcuts, a small floating window of running downloads, **Undo** after delete, download templates, batch rename, warnings for disguised files (.pdf.exe), file integrity check, loudness normalize / noise clean-up, description and comments saved with videos.
+- Animated welcome screens for new users and this animated **What's new** window.
+
+### Windows 32-bit
+- New **32-bit installer** (`LinkPilot_0.3.0_x86-setup.exe`) for older PCs. Video components: yt-dlp is available in 32-bit; FFmpeg, Deno and Whisper have no 32-bit builds, so merging high qualities, subtitles creation and some YouTube formats need your own 32-bit FFmpeg — or the 64-bit LinkPilot.
+
 ## [0.2.3] — 2026-10-26
 
 ### Playlists
