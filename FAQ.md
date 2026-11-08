@@ -21,6 +21,15 @@ In your download folder (Settings → General). With "Save each category in its 
 ### How do updates work?
 LinkPilot checks this repository every two hours. When there is a new version, a Windows notification shows its number and what is new. You can update in one click, or choose **Settings → Updates → Auto** to have updates installed without asking.
 
+### How do I use the built-in VPN?
+Click **VPN** at the bottom of the sidebar and press the big circle. The first time, LinkPilot downloads its small VPN engine (wireproxy) and creates a free Cloudflare WARP identity — no account. Your downloads (and your browsers, if you keep that switch on) then go through the tunnel. WARP keeps a location near you; to appear in a specific country, add a WireGuard `.conf` file from your VPN provider. If it says *could not connect*, your network may block WireGuard (UDP 2408): try another network or a WireGuard file from another provider.
+
+### A site still asks me to disable my ad blocker.
+Open the extension, go to **Protection** and make sure the ad blocker is on, then reload the page. LinkPilot answers ad requests with empty successful responses, so most "disable your ad blocker" checks pass. If one site still complains, use **Allow ads on this site** for it, and tell us the address in an issue so we can handle it.
+
+### What is my LinkPilot number?
+It is a fixed 9-digit number, shown at the top of the **Send & chat** page — like an AnyDesk address. A friend types it and presses **Connect**; you both see the same 6-digit safety number, and you accept. After that you can chat and send files, voice notes and links, end-to-end encrypted. You can turn requests by number off in Settings → LinkPilot Send.
+
 ### Is LinkPilot free?
 Yes.
 

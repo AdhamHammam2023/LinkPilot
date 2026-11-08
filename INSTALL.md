@@ -23,6 +23,8 @@ Video downloads use **yt-dlp**, **FFmpeg** and **Deno**. The first time you need
 4. Click **Load unpacked** and choose that folder.
 5. Pin the LinkPilot icon to the toolbar.
 
+The extension updates itself after every LinkPilot update (it reloads the new files on its own). Its window has three tabs: **Download**, **Protection** (built-in VPN status and the ad blocker with its statistics) and **Settings**.
+
 ## Updating
 From version 0.2.0 on, LinkPilot updates itself; see [Updates in the README](README.md#updates). Installing a newer setup over an older one also works, and keeps your downloads and settings.
 

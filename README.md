@@ -71,11 +71,49 @@ LinkPilot checks for new versions every two hours and tells you the new version 
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ Free built-in VPN
+One click and your downloads go through **Cloudflare WARP** — free, unlimited, no account — so blocked sites open. Your browsers can use it too, and the extension shows whether it is on. Add a WireGuard file from any VPN provider to pick a country, or use your own proxy. No admin rights, no network driver.
+
+</td>
+<td width="50%" valign="top">
+
+### 🚫 Ad blocker in the extension
+Blocks ads, pop-ups, popunders, ad trackers and YouTube ads — built so sites do not notice it. Allow ads on the sites you want to support with one switch.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📞 Send to anyone, like AnyDesk
+Every LinkPilot has a **9-digit number**. Type a friend's number, they accept after comparing a safety number, and you can chat and send files, voice notes, links and torrents — end-to-end encrypted, between any two cities or countries.
+
+</td>
+<td width="50%" valign="top">
+
+### 🧭 A clean, modern look
+A downloads table with pictures of your videos, progress, speed and time left, a details panel, a right-click menu on every download, and a window per download with its connections. Dark and light themes, Arabic, English, French and Spanish.
+
+</td>
+</tr>
 </table>
 
 ---
 
 ## Screenshots
+
+<div align="center">
+
+<b>Built-in VPN</b><br />
+<img src="assets/vpn.png" alt="Built-in VPN" width="820" />
+<br /><br />
+<b>The window of each download</b><br />
+<img src="assets/download-window.png" alt="Download window" width="520" />
+
+</div>
 
 <div align="center">
 
@@ -115,22 +153,24 @@ LinkPilot checks for new versions every two hours and tells you the new version 
 | **Music** | Search by name · Spotify songs, albums and podcasts · identify a song and fix its tags and cover |
 | **Sources** | HTTP/HTTPS · torrents and magnets · FTP, FTPS, SFTP · Google Drive · MEGA · mirrors · site grabber · RSS and watched pages |
 | **After download** | Extract archives · convert video/audio · Whisper subtitles · VirusTotal scan · run a script · shut down or sleep when done |
-| **Control** | Speed limits by time of day · game & call mode (lowers speed while you play or call) · monthly data allowance · per-site proxy |
+| **Protection** | Free built-in VPN (Cloudflare WARP, your WireGuard file or proxy) · ad and pop-up blocker in the extension that sites do not notice, with statistics |
+| **Send & chat** | LinkPilot number like AnyDesk · invite codes · chat, voice notes, files, links and torrents · groups up to 10 · end-to-end encrypted |
+| **Control** | Change connections while downloading · speed limits by time of day · game & call mode (lowers speed while you play or call) · monthly data allowance · per-site proxy |
 | **Privacy** | Private downloads · app lock · cookies stay on your PC and are only used for sites you allow |
-| **Comfort** | Arabic & English · dark & light themes · cards or list view · clipboard watching · statistics · local API and command line |
+| **Comfort** | Arabic, English, French & Spanish · dark & light themes · table, cards or list view · video pictures in the list · right-click menu · clipboard watching · statistics · local API and command line |
 
 ---
 
 ## A closer look
 
 ### 🚀 Getting started
-Paste any link into the bar at the top of the Downloads page and press **Download**. It can be a direct file, a video page, a magnet link, an FTP address or a Spotify link. You can also drag a link or a `.torrent` file straight onto the window.
+Press **New download** (or **Add URL** in the toolbar), paste any link and press **Download**. It can be a direct file, a video page, a magnet link, an FTP address or a Spotify link. You can also drag a link or a `.torrent` file straight onto the window.
 
 - **File links** open the *Add download* window, where you can change the name, folder and category, and see the size and the free space before you start.
 - **Video links** open the quality window.
 - **Words instead of a link** start a search.
 
-The Downloads page has two looks. **Cards** show big thumbnails and clear buttons. **List** is a quiet view with a live speed graph on top.
+The Downloads page is a **table**: each download with its picture, address, size, progress, speed, time left and status, and a details panel below. The sidebar filters by library (downloading, unfinished, completed) and category, the title bar searches (Ctrl+F), right-click any row for everything you can do with it, and double-click opens its own window with a speed limit and its connections. **Cards** and **List** looks are still in Settings → Appearance.
 
 ### ⚡ How LinkPilot gets your full speed
 Most servers limit how fast a single connection can go. LinkPilot splits every file into parts and downloads them at the same time over several connections, then joins them into one file.
@@ -169,7 +209,8 @@ Type any song or video name, on the Search page or straight into the link bar. L
 ### 🌐 The browser extension
 Once installed (in Chrome, Edge or Brave; Opera and Firefox work too), downloads you start in the browser go to LinkPilot automatically.
 
-- **A LinkPilot button** sits just above every video on any site and is hidden while the video is full screen. On YouTube's home, search and channel pages, it downloads the video you're previewing.
+- **A LinkPilot bar** sits just above every video on any site, showing the quality and length of what is playing. **Download video** lists every quality with its size and **MP3** lists the audio formats: pick one and it downloads. It hides in full screen, has a small style and an opacity setting, and on YouTube's home, search and channel pages it downloads the video you're previewing.
+- **Ad blocker** (off until you turn it on): ads, pop-ups, popunders and ad trackers, built so sites do not notice it, with statistics in the **Protection** tab. The same tab shows whether LinkPilot's VPN is on and turns it on or off.
 - **The toolbar icon** lists every video and stream found on the page, with its qualities on two tabs, *Video* and *Audio*.
 - **Alt + click** any link to download it with LinkPilot, or **Alt + Shift + click** to leave it to the browser.
 - **Signed-in sites:** allow a site to share your browser session, and files that need you to be signed in download normally. Its cookies go only to LinkPilot on your own computer.

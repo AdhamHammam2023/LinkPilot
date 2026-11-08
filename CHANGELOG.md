@@ -3,6 +3,24 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.4.0] — 2026-11-08
+
+- **A smarter ad blocker with statistics** — Sites do not notice it, so “disable your ad blocker” messages do not appear. Pop-ups a page opens without your click are stopped before they open, and a tab that bounces through ad sites is closed at once. The Protection tab shows how many ads and pop-ups were blocked, the busiest ad sites and recent activity.
+- **A smarter, nicer video bar** — The bar over videos is now glassy with a gradient icon, shows the quality and length of what is playing (e.g. 1080p · 12:34 or LIVE), has an MP3 button for audio only, and confirms “Sent to LinkPilot ✓”. Site styles cannot break it.
+- **VPN status in the browser extension** — The extension window was redone in the app’s colours, with a card that tells you whether the VPN is on (with IP and country) and a button to turn it on or off.
+- **Right-click any download** — Right-click any row in the table for everything you can do: open, open folder, pause or resume, the download window, convert, copy link, properties and delete.
+- **A clearer “Convert” button** — It opens a list of your finished videos and songs: pick one and turn it into MP4, MP3 or GIF, make it smaller, or cut a part.
+- **A completely new look** — Navy colours with a purple-to-cyan gradient, a downloads table with name and address, size, progress, speed, time left and status, and a details panel below. The sidebar has the library and categories, the toolbar has an icon above each label, and search sits in the title bar (Ctrl+F). Double-click a download for its own window with a big percentage, speed limit and connections.
+- **Your LinkPilot number, like AnyDesk** — Every copy has a fixed 9-digit number on the Send page. Give anyone your number, they type it and press Connect, you accept after comparing the safety number, and then you send files, links and chat — no invite code.
+- **Free built-in VPN (Cloudflare WARP)** — The VPN button under the sidebar: one click and your downloads go through the free WARP tunnel, so blocked sites open — your browsers too if you want. Add a WireGuard file from any provider to pick a country, or your own proxy.
+- **Ad blocker in the browser extension** — Turn it on in the extension window: it blocks ads, pop-ups, trackers and YouTube ads, and is built so sites do not notice it. You can allow ads on a site you like.
+- **Video pictures in the list** — Any video or song with a picture (YouTube or any site) shows it next to its name in the table, the details panel and its download window.
+- **Change connections while downloading** — In the download window → Speed limiter: the number of connections changes at once, no pause and resume.
+- **.torrent files and magnet links open with LinkPilot** — Double-click a .torrent file or click a magnet link in the browser and it opens in LinkPilot (when no other torrent program is set). You can also pick it from “Open with” or Windows Default apps.
+- **Video button: small style and opacity** — In the extension window pick a small button (↓ and ✕ only) and set its opacity. Closing it with ✕ keeps it closed on that site, and it hides in full screen.
+- **Deleting really stops the download** — Pressing ✕ and closing LinkPilot used to leave the download running in the background and bring it back later. Now it stops at once, you get 10 seconds to Undo, and closing LinkPilot carries out the deletion.
+- **More fixes and improvements** — If LinkPilot freezes, starting it again offers to close and restart it. A clear message when the download drive is locked by BitLocker. The window remembers its size and place. The browser extension updates itself after every LinkPilot update.
+
 ## [0.3.1] — 2026-11-02
 
 ### Chat like WhatsApp Web
