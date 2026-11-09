@@ -75,13 +75,13 @@ LinkPilot checks for new versions every two hours and tells you the new version 
 <td width="50%" valign="top">
 
 ### 🛡️ Free built-in VPN
-One click and your downloads go through **Cloudflare WARP** — free, unlimited, no account — so blocked sites open. Your browsers can use it too, and the extension shows whether it is on. Add a WireGuard file from any VPN provider to pick a country, or use your own proxy. No admin rights, no network driver.
+One click and your downloads go through **Cloudflare WARP** — free, unlimited, no account — so blocked sites open. It connects like Cloudflare's own app (MASQUE on port 443, falling back to HTTP/2), so it works even on networks that block VPNs. Your browsers can use it too, and the extension shows whether it is on. Add a WireGuard file from any VPN provider to pick a country, or use your own proxy. No admin rights, no network driver.
 
 </td>
 <td width="50%" valign="top">
 
 ### 🚫 Ad blocker in the extension
-Blocks ads, pop-ups, popunders, ad trackers and YouTube ads — built so sites do not notice it. Allow ads on the sites you want to support with one switch.
+Blocks ads, pop-ups, popunders, ad trackers and YouTube ads — built so sites do not notice it. If a site still asks you to turn it off, **stealth mode** kicks in by itself: the ads load so the site is happy, but you never see them, and pop-ups and betting pages stay blocked. Allow ads on the sites you want to support with one switch.
 
 </td>
 </tr>
@@ -95,7 +95,7 @@ Every LinkPilot has a **9-digit number**. Type a friend's number, they accept af
 <td width="50%" valign="top">
 
 ### 🧭 A clean, modern look
-A downloads table with pictures of your videos, progress, speed and time left, a details panel, a right-click menu on every download, and a window per download with its connections. Dark and light themes, Arabic, English, French and Spanish.
+A downloads table with pictures of your videos, progress, speed and time left, sorting by any column, drag-to-select with one bar for many downloads, a details panel, a right-click menu on every download, and a window per download with its connections. Dark and light themes, Arabic, English, French and Spanish.
 
 </td>
 </tr>

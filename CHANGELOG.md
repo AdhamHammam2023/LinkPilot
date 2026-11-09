@@ -3,8 +3,14 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
-## [0.4.0] — 2026-11-08
+## [0.4.0] — 2026-11-09
 
+- **The VPN now works even where VPNs are blocked** — WARP now connects the way Cloudflare's official app does (MASQUE on port 443), so to the network it looks like ordinary browsing. It tries HTTP/3 first and switches to HTTP/2 over a normal connection by itself if that is blocked. This fixes “Could not connect” on lines that block WireGuard.
+- **Stealth mode: ads blocked, and the site never knows** — If any site shows “please turn off your ad blocker”, the extension notices by itself and switches that site to stealth mode: ads load in the background so the site thinks they ran, but you never see them, and pop-ups stay blocked. Ad images are no longer swapped either, so sites like CimaNow no longer detect the blocker.
+- **Pop-ups and betting pages really get blocked** — The pop-up guard did not start after the update; that is fixed. It now recognises ads by behaviour: invisible links laid over the page, a click anywhere that opens another site, ad links on ever-changing domains, and redirects ending on casino or betting pages. The counters in the Protection tab count again.
+- **Sort, and select many downloads at once** — Click any column title (name, size, status…) to sort from largest to smallest or the other way. To pick several: hold the left mouse button and drag over the rows, or use “Select” / “Select all”. A fixed bar appears at the top to start, pause, delete, copy links or rename them all at once.
+- **New download, Add URL and Video each do their own job** — “New download” takes any link and shows every kind of download (file, video, torrent, many links, links from a page, song search). “Add URL” is for a direct file link and opens the download window straight away. “Video” is for video sites: video or audio only (MP3), or words to search for.
+- **Update notices arrive right away** — LinkPilot checks for updates every 10 minutes. If it is hidden next to the clock, a Windows notification now appears at once instead of waiting until you open it. Also fixed: the thin line of another colour on the edge of the gradient buttons.
 - **A smarter ad blocker with statistics** — Sites do not notice it, so “disable your ad blocker” messages do not appear. Pop-ups a page opens without your click are stopped before they open, and a tab that bounces through ad sites is closed at once. The Protection tab shows how many ads and pop-ups were blocked, the busiest ad sites and recent activity.
 - **A smarter, nicer video bar** — The bar over videos is now glassy with a gradient icon, shows the quality and length of what is playing (e.g. 1080p · 12:34 or LIVE), has an MP3 button for audio only, and confirms “Sent to LinkPilot ✓”. Site styles cannot break it.
 - **VPN status in the browser extension** — The extension window was redone in the app’s colours, with a card that tells you whether the VPN is on (with IP and country) and a button to turn it on or off.

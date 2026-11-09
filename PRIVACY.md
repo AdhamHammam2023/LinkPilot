@@ -16,7 +16,7 @@ LinkPilot runs on your computer and keeps your data there.
 | VirusTotal | Only if you turn it on and enter your own API key. It sends the file's **SHA-256 hash**, never the file itself. |
 | AcoustID / AudD / MusicBrainz / Spotify | Only when you use song identification or Spotify features, with your own keys |
 | Proxies | Only the ones you set up |
-| Cloudflare WARP (`api.cloudflareclient.com`, `engage.cloudflareclient.com`) and the wireproxy release on GitHub | Only when you turn the built-in VPN on |
+| Cloudflare WARP (`api.cloudflareclient.com`, Cloudflare's MASQUE servers) and the usque / wireproxy releases on GitHub | Only when you turn the built-in VPN on |
 | Public relays of iroh (n0) | Only when LinkPilot Send is on: to find your contacts and your LinkPilot number; messages stay end-to-end encrypted |
 
 ## Built-in VPN (only when you turn it on)

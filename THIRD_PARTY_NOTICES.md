@@ -44,7 +44,8 @@ official release pages and verifies their published SHA-256 checksums:
 |---|---|---|
 | yt-dlp (`yt-dlp.exe`) | Unlicense (public domain). The official Windows build also contains Python and other libraries under their own licenses (see the yt-dlp release's THIRD_PARTY_LICENSES). | https://github.com/yt-dlp/yt-dlp |
 | Deno | MIT | https://github.com/denoland/deno |
-| wireproxy (`wireproxy.exe`, built-in VPN; downloaded the first time the VPN is used, SHA-256 checked) | ISC | https://github.com/windtf/wireproxy |
+| usque (`usque.exe`, built-in VPN — Cloudflare WARP over MASQUE; downloaded the first time WARP is used, SHA-256 checked) | MIT | https://github.com/Diniboy1123/usque |
+| wireproxy (`wireproxy.exe`, built-in VPN with your own WireGuard file; downloaded the first time the VPN is used, SHA-256 checked) | ISC | https://github.com/windtf/wireproxy |
 | whisper.cpp + ggml models (optional subtitles) | MIT | https://github.com/ggml-org/whisper.cpp — models: https://huggingface.co/ggerganov/whisper.cpp |
 | FFmpeg — **LGPL build only** (BtbN `win64-lgpl` static build) | LGPL-2.1-or-later | https://github.com/BtbN/FFmpeg-Builds — source: https://ffmpeg.org/download.html |
 | Chromaprint `fpcalc` (optional, song fingerprints for AcoustID) | LGPL-2.1 (the Windows build includes FFmpeg under LGPL) | https://github.com/acoustid/chromaprint |
