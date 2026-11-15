@@ -3,6 +3,27 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.5.0] — 2026-11-15
+
+This release also carries everything from 0.4.1 below (the stronger ad blocker with the uBlock Origin / AdGuard lists, pop-up modes, the video button settings and the live VPN notifications), which was never published on its own.
+
+- **Share files with your phone and other computers** — A new “Share” button shows a QR code. Scan it with the phone camera and a page opens where you send files or whole folders to the computer and download what you shared, over the same Wi-Fi with no internet. Transfers resume after a dropped connection, the link is encrypted (HTTPS with a self-signed certificate; the phone's browser warns once) and each transfer shows its speed. Other computers running LinkPilot are found on the network and receive files after they accept.
+- **Save WhatsApp statuses** — Turn on “Save WhatsApp statuses” in the browser extension, open WhatsApp Web and view a status: a “Save to LinkPilot” button saves the picture or video into a “WhatsApp Status” folder and lists it with your downloads. The extension asks for access to WhatsApp Web only.
+- **Internet speed test** — Measures delay, jitter, download and upload through the connection LinkPilot uses (so with the VPN when it is on), with a live number, a graph and a plain verdict.
+- **Diagnose a failed download** — ⋮ → “Diagnose” checks the internet, the server's name, the server's answer, resume support, free space and whether the file changed, tells you the likely cause and offers a one-click fix.
+- **Fix: several parts of one video** — Picking two chapters or two far-apart parts saved only one, because both parts had the same file name. Each part is now its own file named with its time range.
+- **Fix: sound parts start exactly where asked** — A part of a sound or song could start a little early or late; it is now cut precisely.
+
+## [0.4.1] — 2026-11-09
+
+- **An ad blocker as strong as uBlock Origin and AdGuard** — The extension now downloads the same filter lists (uBlock Origin's lists, AdGuard Base and Popups, EasyList, EasyPrivacy, Peter Lowe's list and the Arabic Liste AR) and updates them daily: more than 120,000 rules that block ads and trackers, hide them in the page (including advanced :has-text / :upward filters) and run scriptlets that switch off ad code and blocker detectors. More lists (Russian, Turkish, French, Spanish, German, mobile ads, annoyances) can be turned on in Protection → Filter lists.
+- **Pop-ups: block all, ads only, or none** — A new choice in the Protection tab.
+- **The video download button, your way** — Size (70–160%), language (Arabic, English, French, Spanish or automatic) and side (left, right or automatic) in the extension settings.
+- **A much stronger ad blocker** — Requests to ad servers and trackers (analytics, session recording, Facebook and TikTok pixels, phone makers' telemetry) now fail outright. On ad-blocker test sites the score went from 7 to 126 of 130 (adblock.turtlecute.org) and from 63 to 433 of 482 (superadblocktest.com). A site that shows “turn off your ad blocker” still switches to stealth mode by itself.
+- **Ads covering the video disappear** — Aggressive ad networks that change domains every few days (the ones on streaming servers) are recognised by the shape of their address and blocked, even in stealth mode. Boxes and layers drawn over the page are hidden automatically, the page is no longer sent to an ad when you click the video, and pop-ups through hidden frames are stopped.
+- **Sites that insist on their pop-up** — When a site says “pop-ups are blocked, please allow them”, the extension reloads the page once by itself; from then on the pop-up opens in the background for 3 seconds and closes by itself while you stay on the site.
+- **The browser follows the VPN by itself** — Turning the VPN on or off in the app shows a browser notification with the country and IP you now appear from, and the VPN card in the extension updates while it is open.
+
 ## [0.4.0] — 2026-11-09
 
 - **The VPN now works even where VPNs are blocked** — WARP now connects the way Cloudflare's official app does (MASQUE on port 443), so to the network it looks like ordinary browsing. It tries HTTP/3 first and switches to HTTP/2 over a normal connection by itself if that is blocked. This fixes “Could not connect” on lines that block WireGuard.

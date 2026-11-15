@@ -24,6 +24,11 @@ LinkPilot runs on your computer and keeps your data there.
 - **Your WireGuard file or proxy**: traffic goes to the provider you chose. The file and proxy password are stored encrypted with DPAPI.
 - Windows' proxy setting is changed only while the VPN is on, and put back as it was when it turns off.
 
+## Share, speed test and WhatsApp statuses
+- **Share** (only while you press “Start sharing”): a small server listens on your local network only (private addresses). The link in the QR code contains a random key; without it the server answers “not found”. The connection is encrypted with HTTPS (self-signed certificate) unless you turn that off. Nothing goes through the internet. Other LinkPilot computers can see that you are sharing (name and port, broadcast on the local network) and must be accepted by you before they can send anything.
+- **Speed test** (only when you press Start): downloads and uploads test data from Cloudflare's public speed-test servers, which see your IP address like any website.
+- **WhatsApp statuses** (extension, off by default): when you turn it on the browser asks for access to web.whatsapp.com only. The status you press “Save” on is read in the page and handed to LinkPilot on your own computer; it is not sent anywhere else.
+
 ## LinkPilot number
 - Your 9-digit number lets people ask to connect to you; nothing is shared until you accept. It can be turned off in Settings → LinkPilot Send.
 
@@ -31,7 +36,7 @@ LinkPilot runs on your computer and keeps your data there.
 - The extension talks only to LinkPilot on your own computer, through Windows native messaging.
 - It sends cookies only for sites you allow, so that files which need you to be signed in can be downloaded. These cookies never leave your computer.
 - You can choose sites that it should never capture.
-- The ad blocker works entirely inside your browser with LinkPilot's own list; it sends nothing anywhere.
+- The ad blocker works entirely inside your browser. It downloads public filter lists (uBlock Origin, AdGuard, EasyList, Peter Lowe's list) from their publishers once a day — a plain download, like a web page; nothing about you or the sites you visit is sent.
 
 ## Stored data
 - Your downloads list and settings: `%LOCALAPPDATA%\LinkPilot\data\`.

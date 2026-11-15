@@ -4,7 +4,7 @@ LinkPilot is built with open-source components. This file lists them and the
 obligations that come with redistributing them. The complete, machine-generated
 lists (name, version, license, repository) are in:
 
-* `docs/licenses/rust-crates.csv` — 529 Rust crates compiled into `linkpilot.exe` and `linkpilot-host.exe`
+* `docs/licenses/rust-crates.csv` — 623 Rust crates compiled into `linkpilot.exe` and `linkpilot-host.exe`
 * `docs/licenses/js-packages.csv` — JavaScript packages bundled into the interface
 
 They are updated with every release.
@@ -65,6 +65,22 @@ requires shipping its license text and offering its corresponding source code;
 A user's own FFmpeg already installed on the computer (for example a GPL
 "full" build) may be used for personal use when the setting "Use the FFmpeg
 already installed" is on; LinkPilot never copies, modifies or redistributes it.
+
+## Ad blocker filter lists (downloaded by the browser extension, not bundled)
+
+When the ad blocker is on, the LinkPilot browser extension downloads these
+public filter lists from their publishers once a day and applies them inside
+the browser. LinkPilot ships none of their content; its own rule engine and
+scriptlets are LinkPilot's own code, written after the public documentation of
+the filter syntax.
+
+| List | License | Source |
+|---|---|---|
+| uBlock Origin filters (filters, badware risks, privacy, quick fixes, unbreak) | GPL-3.0 | https://github.com/uBlockOrigin/uAssets |
+| EasyList, EasyPrivacy | GPL-3.0 / CC BY-SA 3.0 | https://easylist.to |
+| Liste AR (EasyList Arabic) | GPL-3.0 / CC BY-SA 3.0 | https://easylist-downloads.adblockplus.org |
+| AdGuard filters (Base, Popups and the optional ones) | GPL-3.0 | https://github.com/AdguardTeam/AdguardFilters |
+| Peter Lowe's Ad and tracking server list | McRae GPL | https://pgl.yoyo.org/adservers/ |
 
 ## Not used
 

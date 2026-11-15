@@ -94,6 +94,14 @@ Every LinkPilot has a **9-digit number**. Type a friend's number, they accept af
 </td>
 <td width="50%" valign="top">
 
+### 📱 Share with your phone and other computers
+
+Press **Share**, scan the QR code with the phone camera, and a page opens where you send photos, videos, audio, files or whole folders to the computer, and download what the computer shares. It works over your own Wi-Fi with no internet, resumes after a dropped connection, is encrypted (HTTPS) and shows the speed of every transfer. Add the page to the phone's home screen to use it like an app. Paste a video or file link on the phone to see its qualities and download on the computer, on the phone or both; send any download from the computer to a connected phone. Other computers running LinkPilot appear in a list and receive files after they accept.
+
+### 💬 WhatsApp statuses, speed test and diagnosis
+
+Turn on "Save WhatsApp statuses" in the extension to keep any status you view on WhatsApp Web. The built-in speed test measures your own line directly with an animated gauge. If a download fails, ⋮ → Diagnose checks the internet, the server, the link and the disk, and offers a one-click fix.
+
 ### 🧭 A clean, modern look
 A downloads table with pictures of your videos, progress, speed and time left, sorting by any column, drag-to-select with one bar for many downloads, a details panel, a right-click menu on every download, and a window per download with its connections. Dark and light themes, Arabic, English, French and Spanish.
 
