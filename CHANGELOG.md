@@ -3,6 +3,16 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.5.1] — 2026-11-16
+
+- **Every device on your router** — In Share, “Find devices” lists every device on the same router (name, type, maker), even without LinkPilot. A phone with the LinkPilot page open receives files and saves them by itself; a new phone is invited with a QR code or WhatsApp; a smart TV plays a video, song or photo it is sent (UPnP/DLNA); a Windows computer receives files in one of its shared folders. To show makers, LinkPilot downloads Wireshark's public maker list once a month; nothing about your network is sent.
+- **Your phone stays connected** — Each phone gets its own lasting key the first time it opens the page, so stopping and starting sharing, restarting the computer or making a new link no longer needs a new scan; the page reconnects by itself. The same port answers both http and https, so a saved link keeps working whatever the encryption setting. “Paired devices” lists them; “Forget” removes one. The phone page has the real logo, clearer icons and numbers that read correctly in Arabic.
+- **“For the phone” arrives once, and fast** — A plain file is downloaded by the phone itself; a video or sound that is one file (MP3 included) is streamed through the computer to the phone while it downloads, over 12 connections at once, and nothing is kept on the computer. Qualities that need merging are still prepared on the computer first.
+- **Progress on the taskbar icon** — While something downloads, LinkPilot's taskbar button shows how far all running downloads have got.
+- **Fix: the video download bar disappeared after an extension update** — Chrome and Edge drop the extension's registered scripts on every update; the extension now registers them again on start. A release check now loads the extension, updates it and confirms the bar still appears.
+- **Fix: “ads.json: Rule with id 24 was skipped”** — That ad rule's pattern was over Chrome's 2 KB limit; it is smaller now and every rule is checked before a release.
+- **Fix: chosen parts of a video as MP3 failed** (“Could not extract the video from this page”) — the cut was encoded as MP3 inside an .m4a file; it is now cut in the source format and converted afterwards.
+
 ## [0.5.0] — 2026-11-15
 
 This release also carries everything from 0.4.1 below (the stronger ad blocker with the uBlock Origin / AdGuard lists, pop-up modes, the video button settings and the live VPN notifications), which was never published on its own.

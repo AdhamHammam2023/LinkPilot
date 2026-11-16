@@ -26,6 +26,9 @@ LinkPilot runs on your computer and keeps your data there.
 
 ## Share, speed test and WhatsApp statuses
 - **Share** (only while you press “Start sharing”): a small server listens on your local network only (private addresses). The link in the QR code contains a random key; without it the server answers “not found”. The connection is encrypted with HTTPS (self-signed certificate) unless you turn that off. Nothing goes through the internet. Other LinkPilot computers can see that you are sharing (name and port, broadcast on the local network) and must be accepted by you before they can send anything.
+- **Paired phones**: each phone that opens the Share page gets its own key, kept on your computer with the name the phone reports, so it reconnects without a new scan. “Forget” in the Share window deletes it.
+- **Find devices** (only when you press it): LinkPilot asks the devices on your own network who they are (ARP, ping, NetBIOS, mDNS, UPnP/SSDP, the Windows file-sharing port). None of this leaves your network. To show device makers it downloads Wireshark's public maker list (wireshark.org) at most once a month; that request carries nothing about your network or devices. “Invite on WhatsApp” only opens WhatsApp with the link for you to send.
+- **Sending to a TV or a shared folder**: a TV plays the file straight from your computer over the local network; a shared folder receives a copy through Windows file sharing with your own Windows sign-in.
 - **Speed test** (only when you press Start): downloads and uploads test data from Cloudflare's public speed-test servers, which see your IP address like any website.
 - **WhatsApp statuses** (extension, off by default): when you turn it on the browser asks for access to web.whatsapp.com only. The status you press “Save” on is read in the page and handed to LinkPilot on your own computer; it is not sent anywhere else.
 
