@@ -3,6 +3,28 @@
 All notable changes to LinkPilot. The newest version is at the top.
 Download any version from [Releases](https://github.com/AdhamHammam2023/LinkPilot/releases).
 
+## [0.6.1] — 2026-11-23
+
+- **New recording panel** — Pick the kind, the quality (YouTube, up to 4K) and the sound quality, then "Start recording". While recording: big timer, pause / resume, save, start over, cancel. Opening another video ends the recording and saves what was recorded of the first one. The bar's ✕ hides it on the current video only (it used to hide the whole site) and is not shown while recording; a site hidden earlier gets a "show the button again" button on the popup's first page.
+- **Fix: "Requested format is not available"** — A picked format number that YouTube no longer offers at download time falls back to the best format at the same height.
+- **Chapters: one file or one file each** — Several picked chapters or parts can be joined in order or kept as separate files; separate files each get their own row in the list.
+- **YouTube recordings from the original video** — On sites LinkPilot downloads from (not live streams), ● notes the parts that play; Save downloads exactly those time ranges from the source at the chosen quality with yt-dlp and joins them into one file (FFmpeg concat). No browser encoding, so no dropped frames and no sound drift, even at 1440p/4K. Live streams and other sites still record in the browser.
+- **Sound quality for recordings** — 128 / 192 / 256 / 320 kbps, remembered; used for the MP3 and for the sound of video recordings.
+- **Fix: several chosen chapters downloaded as one chapter (or the wrong one)** — Each chapter became its own file and the list showed only the first.
+- **Pause a recording and go on from anywhere** — While recording, ● above the video offers “Pause” (⏸ REC; go to any part of the video) then “Resume recording from here” in the same file, or “Save the recording”. Seeking and buffering pause the recording too, so files have no frozen frames.
+- **Record YouTube at any quality up to 4K** — On YouTube the Record tab lists the video's qualities (from the player); picking one switches the player before recording. 1440p and 4K now record (they ask the encoder for H.264 level 5.1; level 4.0 stopped after two seconds). Sound only shows its quality: MP3 at 192 kbps.
+- **Fix: recording stopped after 3 seconds with “open LinkPilot”** — After an extension update, open tabs kept the old video bar, cut off from the extension (recording and the quality list failed). The old bar now removes itself and the extension injects a working one into open tabs. Failed pieces are retried and the real reason is shown.
+- **Smoother recording** — Pieces are encoded by the browser off the page's thread and sent every second, so the video no longer stutters while recording; the record button pulses smoothly. The “saved” message names the folder.
+
+## [0.6.0] — 2026-11-21
+
+- **Record from the video bar** — A red ● button next to MP3 records what a page is playing, on any site, at the playing quality: picture and sound, sound only (saved as MP3) or picture only. A ● REC timer and a stop button show while it records; recordings go to “LinkPilot Recordings”, get a proper duration and seek index (FFmpeg, no re-encoding) and appear in the download list. On a live stream the Record tab also lists the stream's qualities to record from now with yt-dlp. Protected (DRM) videos cannot be recorded.
+- **Simple mode** — Shows only the everyday buttons (new download, video, downloads, search, help); everything else stays hidden and keeps working. Switch in the side menu or Settings → General; new installs choose on the welcome screen. Existing users keep the full interface.
+- **Updates reach you** — A new version is announced in four places until it is installed: a Windows notification that stays on screen, a bar at the top of the window, “Update now” in the tray menu and a bar in the browser extension's popup. LinkPilot checks 20 seconds after it opens (was 90).
+- **Faster first video lookup** — yt-dlp and Deno are started once in the background when LinkPilot opens and after they update, so the first lookup after a reboot no longer waits for Windows to scan them (measured: 82 s before, a few seconds now).
+- **Fix: the WhatsApp status button was missing on a contact's first status** — WhatsApp plays it from its own stream address (served in pieces); the extension now reads every piece and saves the whole video.
+- **Local addresses never go through the proxy or VPN.**
+
 ## [0.5.1] — 2026-11-16
 
 - **Every device on your router** — In Share, “Find devices” lists every device on the same router (name, type, maker), even without LinkPilot. A phone with the LinkPilot page open receives files and saves them by itself; a new phone is invited with a QR code or WhatsApp; a smart TV plays a video, song or photo it is sent (UPnP/DLNA); a Windows computer receives files in one of its shared folders. To show makers, LinkPilot downloads Wireshark's public maker list once a month; nothing about your network is sent.

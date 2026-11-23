@@ -67,7 +67,7 @@ The extension for **Chrome, Edge and Brave** (Opera and Firefox too) sends brows
 <td width="50%" valign="top">
 
 ### 🔄 Always up to date
-LinkPilot checks for new versions every two hours and tells you the new version number in a Windows notification. You can update in one click, or let it install by itself. Its video tools update on their own too.
+LinkPilot checks for new versions 20 seconds after it opens and every two hours. A new version shows in a Windows notification that stays until you answer, a bar in the window, the tray menu and the extension, so you never miss one. Update in one click, or let it install by itself; after the update a "What's new" screen explains every change. Its video tools update on their own too.
 
 </td>
 </tr>
@@ -88,6 +88,20 @@ Blocks ads, pop-ups, popunders, ad trackers and YouTube ads — built so sites d
 <tr>
 <td width="50%" valign="top">
 
+### ⏺️ Record any video, at any quality
+The red ● on the video bar opens a recording panel: picture and sound, sound only (MP3) or picture only, the quality (up to **4K** on YouTube) and the sound quality (128–320 kbps), then **Start recording**. Pause, jump to another part of the video and resume in the same file, start over or cancel. On YouTube and the other supported sites the parts you play are taken from the original video, so every frame is there and the sound stays in step; live streams and any other site are recorded from the page.
+
+</td>
+<td width="50%" valign="top">
+
+### 🙂 Simple mode
+Just want to download? Simple mode shows only new download, video, your downloads, search and help; everything else is hidden and keeps working. Switch any time from the side menu or Settings → General, and new users choose on the welcome screen. While you download, LinkPilot's taskbar icon fills up with the progress.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 📞 Send to anyone, like AnyDesk
 Every LinkPilot has a **9-digit number**. Type a friend's number, they accept after comparing a safety number, and you can chat and send files, voice notes, links and torrents — end-to-end encrypted, between any two cities or countries.
 
@@ -96,7 +110,7 @@ Every LinkPilot has a **9-digit number**. Type a friend's number, they accept af
 
 ### 📱 Share with your phone and other computers
 
-Press **Share**, scan the QR code with the phone camera, and a page opens where you send photos, videos, audio, files or whole folders to the computer, and download what the computer shares. It works over your own Wi-Fi with no internet, resumes after a dropped connection, is encrypted (HTTPS) and shows the speed of every transfer. Add the page to the phone's home screen to use it like an app. Paste a video or file link on the phone to see its qualities and download on the computer, on the phone or both; send any download from the computer to a connected phone. Other computers running LinkPilot appear in a list and receive files after they accept.
+Press **Share**, scan the QR code with the phone camera, and a page opens where you send photos, videos, audio, files or whole folders to the computer, and download what the computer shares. It works over your own Wi-Fi with no internet, resumes after a dropped connection, is encrypted (HTTPS) and shows the speed of every transfer. Add the page to the phone's home screen to use it like an app. Paste a video or file link on the phone to see its qualities and download on the computer, on the phone or both; send any download from the computer to a connected phone. Other computers running LinkPilot appear in a list and receive files after they accept. Each phone stays paired: after a restart the page reconnects by itself, with no new scan. **Find devices** lists everything on your router (name, type, maker): send files to a phone, play a video, song or photo on a smart TV, or copy into a Windows computer's shared folder.
 
 ### 💬 WhatsApp statuses, speed test and diagnosis
 
@@ -157,7 +171,7 @@ A downloads table with pictures of your videos, progress, speed and time left, s
 | | |
 |---|---|
 | **Downloads** | Up to 32 connections per file · smart speed booster · resume after crashes and restarts · queues and scheduler · link renewal when a link expires · checksum checks |
-| **Video & audio** | 144p → 8K · MP3 / M4A / FLAC / WAV · subtitles (and Arabic subtitles) · chapters · download part of a video · live recording · playlists and whole channels · SponsorBlock |
+| **Video & audio** | 144p → 8K · MP3 / M4A / FLAC / WAV · subtitles (and Arabic subtitles) · chapters (one file or one each) · download part of a video · record any video with pause and resume, up to 4K · live recording · playlists and whole channels · SponsorBlock |
 | **Music** | Search by name · Spotify songs, albums and podcasts · identify a song and fix its tags and cover |
 | **Sources** | HTTP/HTTPS · torrents and magnets · FTP, FTPS, SFTP · Google Drive · MEGA · mirrors · site grabber · RSS and watched pages |
 | **After download** | Extract archives · convert video/audio · Whisper subtitles · VirusTotal scan · run a script · shut down or sleep when done |
@@ -165,7 +179,7 @@ A downloads table with pictures of your videos, progress, speed and time left, s
 | **Send & chat** | LinkPilot number like AnyDesk · invite codes · chat, voice notes, files, links and torrents · groups up to 10 · end-to-end encrypted |
 | **Control** | Change connections while downloading · speed limits by time of day · game & call mode (lowers speed while you play or call) · monthly data allowance · per-site proxy |
 | **Privacy** | Private downloads · app lock · cookies stay on your PC and are only used for sites you allow |
-| **Comfort** | Arabic, English, French & Spanish · dark & light themes · table, cards or list view · video pictures in the list · right-click menu · clipboard watching · statistics · local API and command line |
+| **Comfort** | Simple mode · Arabic, English, French & Spanish · dark & light themes · progress on the taskbar icon · table, cards or list view · video pictures in the list · right-click menu · clipboard watching · statistics · local API and command line |
 
 ---
 
@@ -195,7 +209,7 @@ Some servers allow only a few connections per user, and on those the server sets
 The quality window lists every quality the site offers, **from 144p up to 8K**, each with its size. It also lists audio-only choices: original M4A, MP3 at 320, 192 or 128 kbps, WAV and FLAC. You get these choices on every site, even ones that only offer complete files, like TikTok.
 
 - **Subtitles:** pick languages and get `.srt` files or subtitles inside the video. Automatic captions are used when there are no real ones. An **Arabic subtitles** switch appears when the video has Arabic subtitles or Arabic speech.
-- **Chapters:** save each chapter as its own file, or download only some of them.
+- **Chapters:** save each chapter as its own file, or download only some of them — joined in order into one file, or one file each.
 - **Part of a video:** set *From* and *To* (for example 1:05 to 3:20) on a timeline under the video, and only that part is downloaded.
 - **Live streams** are recorded until they end or you stop them, from the beginning when the site allows it.
 - **Playlists and channels:** you get a list of their videos with check boxes, even with thousands of videos, from YouTube or any other site. Choose one quality for all of them (video, or audio as M4A / MP3), tick the videos you want or pick a range by number, and they download one after another.
@@ -218,6 +232,7 @@ Type any song or video name, on the Search page or straight into the link bar. L
 Once installed (in Chrome, Edge or Brave; Opera and Firefox work too), downloads you start in the browser go to LinkPilot automatically.
 
 - **A LinkPilot bar** sits just above every video on any site, showing the quality and length of what is playing. **Download video** lists every quality with its size and **MP3** lists the audio formats: pick one and it downloads. It hides in full screen, has a small style and an opacity setting, and on YouTube's home, search and channel pages it downloads the video you're previewing.
+- **Record** with the red ● next to MP3: pick picture and sound, sound only (MP3) or picture only, the quality and the sound quality, then *Start recording*. While it records you can pause, go to another part of the video and resume, save, start over or cancel; opening another video ends the recording and saves it. On YouTube and the other supported sites the recorded parts are downloaded from the original video, so the file has every frame and the sound stays in step.
 - **Ad blocker** (off until you turn it on): ads, pop-ups, popunders and ad trackers, built so sites do not notice it, with statistics in the **Protection** tab. The same tab shows whether LinkPilot's VPN is on and turns it on or off.
 - **The toolbar icon** lists every video and stream found on the page, with its qualities on two tabs, *Video* and *Audio*.
 - **Alt + click** any link to download it with LinkPilot, or **Alt + Shift + click** to leave it to the browser.

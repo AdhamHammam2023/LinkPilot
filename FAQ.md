@@ -18,8 +18,14 @@ Many sites give links that expire. Use **Refresh download address** from the ⋮
 ### Where are my files?
 In your download folder (Settings → General). With "Save each category in its own sub-folder" on, videos go to `Video`, songs to `Music`, programs to `Programs`, and so on. Turn it off to keep everything in one folder.
 
+### Where do my recordings go? The video bar's ● button
+On YouTube and the other sites LinkPilot downloads from, a recording is downloaded from the original video when you press **Save** (only the parts you played, joined into one file), so it appears in your download list and in your video folder. Live streams and other sites are recorded from the page and saved in a **LinkPilot Recordings** folder inside your download folder. A sound-only recording becomes an MP3 at the sound quality you picked.
+
+### The video bar disappeared on one site.
+The bar's ✕ hides it on the current video only. If a site was hidden by an older version (where ✕ hid the whole site), open the extension's popup on that site and press **Show the button on … again** at the top.
+
 ### How do updates work?
-LinkPilot checks this repository every two hours. When there is a new version, a Windows notification shows its number and what is new. You can update in one click, or choose **Settings → Updates → Auto** to have updates installed without asking.
+LinkPilot checks this repository 20 seconds after it opens and every two hours. When there is a new version, a Windows notification that stays on screen shows its number, and a bar in the window, the tray menu and the extension remind you until you update. You can update in one click, or choose **Settings → Updates → Auto** to have updates installed without asking.
 
 ### How do I use the built-in VPN?
 Click **VPN** at the bottom of the sidebar and press the big circle. The first time, LinkPilot downloads its small VPN engine (usque) and creates a free Cloudflare WARP identity — no account. Your downloads (and your browsers, if you keep that switch on) then go through the tunnel. WARP keeps a location near you; to appear in a specific country, add a WireGuard `.conf` file from your VPN provider. WARP connects the way the official WARP app does (MASQUE: HTTP/3 on port 443, or HTTP/2 over TCP 443 when UDP is blocked), so to the network it looks like ordinary browsing and works even where WireGuard is blocked.
